@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/board_textView_attempts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#000000"
+        android:padding="2sp"
+        tools:context=".app.fragment.BoardFragment">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_0"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_1"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_2"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_3"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_4"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/board_cell_0_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_1_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_2_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_3_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_4_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/board_cell_5_5"
+                android:layout_width="@dimen/board_tile_size"
+                android:layout_height="@dimen/board_tile_size"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:clickable="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

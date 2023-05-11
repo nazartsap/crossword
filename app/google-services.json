@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "763162620921",
+    "project_id": "comp-3717---crossdle",
+    "storage_bucket": "comp-3717---crossdle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763162620921:android:e19a9e31fd95c8fdc60328",
+        "android_client_info": {
+          "package_name": "com.example.crossdle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763162620921-gip9gd6td2qn6lan8ovfo8kb2orp1htv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZ07uKNPsvPWK0osnGsKnJ1I_ILHWcyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763162620921-gip9gd6td2qn6lan8ovfo8kb2orp1htv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

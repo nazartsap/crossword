@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Сборник кроссвордов</string>
+    <string name="app_colon">:</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Game -->
+
+    <string name="game_heading_daily">Daily</string>
+    <string name="game_heading_random">Случайно</string>
+    <string name="game_attempts">Оставшиеся попытки:</string>
+    <string name="game_remaining">20</string>
+    <string name="game_random_title">Случайно</string>
+
+    <!-- Gamebar -->
+
+    <string name="gamebar_heading_title">@string/app_name</string>
+    <string name="gamebar_help_settings">Settings Icon</string>
+    <string name="gamebar_help_info">Info Icon</string>
+
+    <!-- History -->
+
+    <string name="history_heading_games">Игр</string>
+    <string name="history_heading_streak">Сртик</string>
+    <string name="history_heading_wins">Побед %</string>
+    <string name="history_placeholder_number">2</string>
+    <string name="history_placeholder_percent">100%</string>
+
+    <!-- History Item -->
+
+    <string name="history_item_field_title">@string/app_name</string>
+    <string name="history_item_field_time">Время</string>
+    <string name="history_item_field_correct">Правильные буквы</string>
+    <string name="history_item_field_attempts">Попытки</string>
+
+    <!-- Keyboard -->
+
+    <string name="keyboard_button_q">Й</string>
+    <string name="keyboard_button_w">Ц</string>
+    <string name="keyboard_button_e">У</string>
+    <string name="keyboard_button_r">К</string>
+    <string name="keyboard_button_t">Е</string>
+    <string name="keyboard_button_y">Н</string>
+    <string name="keyboard_button_u">Г</string>
+    <string name="keyboard_button_i">Ш</string>
+    <string name="keyboard_button_o">Щ</string>
+    <string name="keyboard_button_p">З</string>
+
+    <string name="keyboard_button_a">Ф</string>
+    <string name="keyboard_button_s">Ы</string>
+    <string name="keyboard_button_d">В</string>
+    <string name="keyboard_button_f">А</string>
+    <string name="keyboard_button_g">П</string>
+    <string name="keyboard_button_h">Р</string>
+    <string name="keyboard_button_j">О</string>
+    <string name="keyboard_button_k">Л</string>
+    <string name="keyboard_button_l">Д</string>
+
+    <string name="keyboard_button_z">Я</string>
+    <string name="keyboard_button_x">Ч</string>
+    <string name="keyboard_button_c">С</string>
+    <string name="keyboard_button_v">М</string>
+    <string name="keyboard_button_b">И</string>
+    <string name="keyboard_button_n">Т</string>
+    <string name="keyboard_button_m">Ь</string>
+
+    <string name="keyboard_button_enter">ENTER</string>
+
+    <!-- Menu -->
+
+    <string name="play_daily_crossdle">Играть</string>
+    <string name="play_random_crossdle">Случайный кросворд</string>
+    <string name="history">История</string>
+    <string name="settings">Настройки</string>
+
+    <!-- Setting -->
+
+    <string name="volume">Звук</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="themes">Темы</string>
+    <string name="title">Настройки</string>
+
+    <!-- Help -->
+
+    <string name="help_crossdle"> Коснитесь столбца или строки и введите свое предположение! Можно вводить только допустимые слова. Нажимайте enter после каждого предположения, чтобы получать подсказки.
+ Правильно расположенные буквы становятся зелеными, а неправильно расположенные буквы в слове - желтыми. Клавиатура также может отслеживать подсказки!
+ У вас есть 20 попыток до окончания игры.
+    </string>
+    <string name="help_title">Как играть:</string>
+    <string name="help_understood_button">Понял</string>
+
+
+</resources>

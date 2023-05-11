@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="keyboard_button_op" type="id" />
+    <item name="keyboard_button_qw" type="id" />
+    <item name="keyboard_button_qe" type="id" />
+    <item name="keyboard_button_qr" type="id" />
+    <item name="keyboard_button_qt" type="id" />
+    <item name="keyboard_button_qy" type="id" />
+    <item name="keyboard_button_qu" type="id" />
+</resources>

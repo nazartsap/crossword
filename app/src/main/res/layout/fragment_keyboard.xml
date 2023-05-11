@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#222222"
+    android:orientation="vertical"
+    tools:context=".app.fragment.KeyboardFragment">
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/keyboard_button_q"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_q"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_w"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_w"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_e"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_e"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_r"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_r"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_t"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_t"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_y"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_y"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_u"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_u"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_i"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_i"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_o"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_o"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_p"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_p"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24sp">
+
+        <Button
+            android:id="@+id/keyboard_button_a"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_a"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_s"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_s"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_d"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_d"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_f"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_f"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_g"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_g"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_h"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_h"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_j"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_j"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_k"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_k"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_l"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_l"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/keyboard_button_enter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight=".3"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_enter"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            app:icon="@drawable/ic_baseline_navigate_next_24"
+            app:iconGravity="end"
+            app:iconPadding="0dp"
+            app:iconSize="20dp"
+            app:iconTint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_z"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_z"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_x"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_x"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_c"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_c"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_v"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_v"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_b"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_b"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_n"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_n"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_m"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight="1"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:text="@string/keyboard_button_m"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/keyboard_button_back"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginHorizontal="2sp"
+            android:layout_weight=".9"
+            android:backgroundTint="#777777"
+            android:paddingVertical="24sp"
+            android:textColor="#FFFFFF"
+            app:icon="@drawable/ic_baseline_arrow_back_24"
+            app:iconPadding="0dp"
+            app:iconTint="@color/white"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</LinearLayout>
