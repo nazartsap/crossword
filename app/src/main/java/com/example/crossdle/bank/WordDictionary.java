@@ -3,10 +3,7 @@ import android.content.Context;
 import com.example.crossdle.app.FileHandler;
 import java.util.HashMap;
 
-/**
- * Holds dictionary data that can be used to check the validity of words against guesses
- * that the user makes.
- */
+
 public class WordDictionary {
     private static final String FILE_NAME = "dictionary";
     public static WordDictionary cached;

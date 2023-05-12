@@ -17,10 +17,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.crossdle.R;
 import com.example.crossdle.app.popup.SettingsPopup;
 
-/**
- * The main menu Activity.
- * Contains the functions necessary to access other activities or features.
- */
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -64,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onResume() {
-        //Starts animations and music when the app resumes.
         super.onResume();
 
         View layoutView = findViewById(R.id.layout_main);
@@ -84,7 +80,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onPause() {
-        //Stops te music on pause.
         super.onPause();
 
         if (!settingsOpen) {
@@ -95,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        //Sets the theme given a user choice.
+
         if (resultCode == SettingsPopup.RESULT_OK) {
             themeData = data.getStringExtra("theme");
             ConstraintLayout constraintLayout = findViewById(R.id.layout_main);
@@ -124,20 +119,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    /**
-     * This method is too assist the animation in the button fading into the main menu.
-     */
     private void animFadeIn(View view, int duration) {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.fadein);
         animation.setDuration(duration);
         view.startAnimation(animation);
     }
 
-    /**
-     * This method is too assist the animation in the button sliding into the main menu.
-     */
+
     private void animSlideIn(View view) {
-        //Sliding animations for menu buttons.
         int interval = 250;
         int duration = 1000;
 
@@ -152,11 +141,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    /**
-     * This method is too assist the animation in the button sliding out from the main menu.
-     */
+
     private void animSlideOut(View view) {
-        //Sliding animations for menu buttons.
+
         int interval = 250;
         int duration = 1000;
 
@@ -173,7 +160,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        //Animations and sound effects for on click events.
         int timeout = 1500;
         animSlideOut(findViewById(R.id.layout_main));
         view.postDelayed(() -> changeActivity(view), timeout);
@@ -182,9 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    /**
-     * This method is Opens the settings pop-up.
-     */
+
     public void onOpenSettings(View view) {
         //Opens the settings pop-up.
         settingsOpen = true;
@@ -194,9 +178,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivityForResult(intent, 1);
     }
 
-    /**
-     * Starts other activities given user input.
-     */
+
     private void changeActivity(View view) {
         if (view.getId() == R.id.button_main_daily_crossdle)  {
             Intent intent = new Intent(this, GameActivity.class);

@@ -19,10 +19,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Represents a game that has been played in the past by a user and holds all relevant information
- * so that a user can view this game data in the future.
- */
+
 public class HistoryItem implements Serializable {
     private String gameId;
     private String time;

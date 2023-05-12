@@ -2,9 +2,7 @@ package com.example.crossdle.bank;
 import com.google.gson.annotations.SerializedName;
 import java.util.ArrayList;
 
-/**
- * Word list data holder class. Used to hold deserialized json data.
- */
+
 public class WordList {
     @SerializedName("data")
     private ArrayList<String> words;

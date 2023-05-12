@@ -13,10 +13,6 @@ import com.example.crossdle.R;
 
 import java.io.Serializable;
 
-/***
- * Represents a single cell on the game board. Has the capability to hold a value for its true
- * letter, the most recent letter in a guessed word, and a attempt letter for a word to be guessed.
- */
 public class Cell implements Serializable
 {
     public enum State
@@ -72,16 +68,12 @@ public class Cell implements Serializable
     public char getValue() { return this.value; }
     public char getAttempt() { return attempt; }
 
-    /**
-     * Gets a neighbouring cell in a given direction.
-     */
+
     public Cell getNeighbour(Word.Orientation orientation, boolean next) {
         return neighbours.get(orientation, next);
     }
 
-    /**
-     * Gets the word that this cell is contained in, in a given direction.
-     */
+
     public Word getWord(Word.Orientation orientation) {
         Cell cell = this;
         while (!cell.isHead(orientation)) {
@@ -91,9 +83,6 @@ public class Cell implements Serializable
         return new Word(cell, orientation);
     }
 
-    /**
-     * Gets current state depending on true data value compared to recent guess value.
-     */
     public State getState() {
         if (this.value == data) {
             return State.CORRECT;
@@ -123,9 +112,6 @@ public class Cell implements Serializable
     public void setAttempt(char value) { attempt = value; }
     public void clearAttempt() { attempt = Character.MIN_VALUE; }
 
-    /**
-     * Accepts an attempt setting this cell's most recent guess value to the attempt value.
-     */
     public void acceptAttempt() {
         value = attempt;
         attempt = Character.MIN_VALUE;
@@ -136,30 +122,21 @@ public class Cell implements Serializable
         return this.value == data;
     }
 
-    /**
-     * Checks if cell is currently attempted.
-     */
+
     public boolean isAttempted() { return attempt != Character.MIN_VALUE; }
 
-    /**
-     * Checks if a cell is a head of a word in a given direction.
-     */
+
     private boolean isHead(Word.Orientation orientation) {
         Cell neighbour = neighbours.get(orientation, false);
         return neighbour == null || !neighbour.isSet();
     }
 
-    /**
-     * Checks if either containing word contains an incorrect given character.
-     */
     private boolean wordsContainIncorrect(char character) {
         return getWord(Word.Orientation.Horizontal).containsIncorrect(character)
                 || getWord(Word.Orientation.Vertical).containsIncorrect(character);
     }
 
-    /**
-     * Draws the cell on a given view.
-     */
+
     public void draw(TextView view) {
         if (isSet()) {
             view.setText(String.valueOf(attempt != Character.MIN_VALUE ? attempt : value));
@@ -197,9 +174,7 @@ public class Cell implements Serializable
         view.startAnimation(animation);
     }
 
-    /**
-     * Represents neighbours for the given cell in the 4 cardinal directions.
-     */
+
     private class Neighbours implements Serializable
     {
         public final Cell up;

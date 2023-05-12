@@ -16,13 +16,9 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.crossdle.R;
 import com.example.crossdle.game.Board;
 
-/**
- * This is a Fragment that holds that will holds/represents the Keyboard of the Game Activity.
- */
+
 public class KeyboardFragment extends Fragment {
-    //This is a String that will be used as a "key" for intents.
     private static final String ARG_BOARD = "ARG_BOARD";
-    //This 2D int array that represents the keyboard.
     private static final int[][] KEYS = new int[][]
     {
         {
@@ -61,13 +57,11 @@ public class KeyboardFragment extends Fragment {
 
     };
 
-    //This is an instance variable that will reference a board object.
     private Board board;
 
-    //This is int constant that represents the "enter" key on a keyboard.
+
     private static final int KEY_ENTER = R.id.keyboard_button_enter;
 
-    //This is int constant that represents the "back space" key on a keyboard.
     private static final int KEY_BACK = R.id.keyboard_button_back;
 
     public KeyboardFragment() {}
@@ -92,26 +86,20 @@ public class KeyboardFragment extends Fragment {
         setup(view);
     }
 
-    //This custom onClick method is called when the user clicks on any key on the keyboard.
     public void onClickKey(View view) {
         board.clickKey(((TextView)view).getText().charAt(0));
     }
 
-    //This custom onClick method is called when the user clicks on the "enter" key on the keyboard.
+
     public void onClickEnter(View view) {
         board.clickEnter();
     }
 
-    //This custom onClick method is called when the user clicks on the "backspace" key on the
-    // keyboard.
+
     public void onClickBack(View view) {
         board.clickBack();
     }
 
-    /**
-     * This method setsup the keyboard with the custom onClick methods above.
-     * @param view a View object.
-     */
     public void setup(View view) {
         view.findViewById(KEY_ENTER).setOnClickListener(this::onClickEnter);
         view.findViewById(KEY_BACK).setOnClickListener(this::onClickBack);
@@ -123,11 +111,6 @@ public class KeyboardFragment extends Fragment {
         }
     }
 
-    /**
-     * This method creates a new instance of the keyboardFragment.
-     * @param board a Board object.
-     * @return A KeyboardFragment.
-     */
     public static KeyboardFragment newInstance(Board board) {
         KeyboardFragment fragment = new KeyboardFragment();
         Bundle args = new Bundle();
@@ -136,9 +119,6 @@ public class KeyboardFragment extends Fragment {
         return fragment;
     }
 
-    /**
-     * This method creates the frame of the KeyboardFragment.
-     */
     public static KeyboardFragment frame(FragmentManager manager, int id, Board board) {
         KeyboardFragment fragment = KeyboardFragment.newInstance(board);
         FragmentTransaction transaction = manager.beginTransaction();

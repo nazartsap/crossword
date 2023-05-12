@@ -11,10 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Supplier;
 
-/**
- * Represents the view in MVC architecture for the board. Controls drawing the current state
- * to the user given the data that it is sent.
- */
+
 public class BoardView implements Serializable {
     private transient Supplier<View> viewHandler;
     private transient Supplier<View> viewKeyboardHandler;

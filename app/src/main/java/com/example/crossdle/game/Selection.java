@@ -2,11 +2,6 @@ package com.example.crossdle.game;
 
 import java.io.Serializable;
 
-/***
- * Represents a selection in the game state. A selection can be targeting nothing (null) or a
- * word. If it is targeting a word a current cell value is stored from that word representing the
- * current letter position of the selection.
- */
 public class Selection implements Serializable
 {
     private Word word;
@@ -59,9 +54,6 @@ public class Selection implements Serializable
         update(null);
     }
 
-    /**
-     * Set current cell attempt to a value and move to next cell in selection.
-     */
     public void next(char value) {
         Cell destination = current.getNeighbour(word.getOrientation(), true);
         current.setAttempt(value);
@@ -71,9 +63,6 @@ public class Selection implements Serializable
         setCurrent(destination);
     }
 
-    /**
-     * Unset current cell and previous cell and move to previous cell in selection.
-     */
     public void prev() {
         Cell destination = current.getNeighbour(word.getOrientation(), false);
         current.setAttempt(Character.MIN_VALUE);
@@ -84,9 +73,6 @@ public class Selection implements Serializable
         current.setAttempt(Character.MIN_VALUE);
     }
 
-    /**
-     * Set selection to a new word.
-     */
     public void update(Word word) {
         selectCells(false);
         this.word = word;
@@ -98,9 +84,6 @@ public class Selection implements Serializable
         selectCells(true);
     }
 
-    /**
-     * Sets all cells in current word to selected.
-     */
     private void selectCells(boolean selected) {
         if (!isSet()) { return; }
         for (Cell cell : word.getCells()) {

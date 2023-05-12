@@ -16,16 +16,11 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.crossdle.R;
 import com.example.crossdle.game.Board;
 
-/**
- * Handles opening raw resources and has a helper function for opening
- * and converting a raw json resource to a new instance of a gson compatible class.
- */
+
 public class BoardFragment extends Fragment {
 
-    //This is a String that will be used as a "key" for intents.
     private static final String ARG_BOARD = "ARG_BOARD";
 
-    //This is a 2D array of ints that will represents the Crossdle board.
     private static final int[][] LAYOUT = new int[][]
             {
                     { R.id.board_cell_0_0, R.id.board_cell_1_0, R.id.board_cell_2_0, R.id.board_cell_3_0,
@@ -42,7 +37,6 @@ public class BoardFragment extends Fragment {
                             R.id.board_cell_4_5, R.id.board_cell_5_5, }
             };
 
-    // An instance variable that will represent/reference the board.
     private Board board;
 
     public BoardFragment() {}
@@ -68,19 +62,12 @@ public class BoardFragment extends Fragment {
         board.draw();
     }
 
-    /**
-     * This custom onClick method is called when a user clicks on a cell in the Crossdle board.
-     * @param view a View object.
-     */
     public void onClickCell(View view) {
         com.example.crossdle.app.fragment.BoardFragment.Index index = findViewIdIndex(view.getId());
         board.clickCell(index.x, index.y);
     }
 
-    /**
-     * This method setsup the Crossdle board with the custon onClick method "onClickCell()".
-     * @param view a View object.
-     */
+
     public void setup(View view) {
         for (int y = 0; y < LAYOUT.length; y++) {
             for (int x = 0; x < LAYOUT[y].length; x++) {
@@ -91,11 +78,7 @@ public class BoardFragment extends Fragment {
     }
 
 
-    /**
-     * This method finds the Id of an index in the Crossdle board.
-     * @param viewId an int that represents the ID of an index/view in the Crossdle board.
-     * @return an Index object.
-     */
+
     private com.example.crossdle.app.fragment.BoardFragment.Index findViewIdIndex(int viewId) {
         int[][] viewIds = LAYOUT;
         for (int y = 0; y < viewIds.length; y++) {
@@ -109,11 +92,7 @@ public class BoardFragment extends Fragment {
         return null;
     }
 
-    /**
-     * This method creates a new instance of the BoardFragment.
-     * @param board A Board object.
-     * @return A BoardFragment.
-     */
+
     public static com.example.crossdle.app.fragment.BoardFragment newInstance(Board board) {
         com.example.crossdle.app.fragment.BoardFragment fragment = new com.example.crossdle.app.fragment.BoardFragment();
         Bundle args = new Bundle();
@@ -122,9 +101,7 @@ public class BoardFragment extends Fragment {
         return fragment;
     }
 
-    /**
-     * This method creates the frame of the Board Fragment.
-     */
+
     public static com.example.crossdle.app.fragment.BoardFragment frame(FragmentManager manager, int id, Board board) {
         com.example.crossdle.app.fragment.BoardFragment fragment = com.example.crossdle.app.fragment.BoardFragment.newInstance(board);
         FragmentTransaction transaction = manager.beginTransaction();
@@ -133,21 +110,14 @@ public class BoardFragment extends Fragment {
         return fragment;
     }
 
-    /**
-     * This class is an Index class that will hold variable that will represent the coordinates of
-     * cells in the Crossdle board.
-     */
+
     private class Index {
         //an int that represents the x-coordinate of the cell.
         public final int x;
         //an int that represents the y-coordinate of the cell.
         public final int y;
 
-        /**
-         * A Constructor that will build an Index object.
-         * @param x an int that represents the x-coordinate.
-         * @param y an int that represents the y-coordinate.
-         */
+
         public Index(int x, int y) {
             this.x = x;
             this.y = y;

@@ -4,9 +4,7 @@ import com.example.crossdle.app.FileHandler;
 import com.google.gson.annotations.SerializedName;
 import java.util.Random;
 
-/**
- * Holds word base data that is used to generate boards using words of various lengths.
- */
+
 public class WordBase {
     private static final String FILE_NAME_FOUR = "word_base_four";
     private static final String FILE_NAME_FIVE = "word_base_five";

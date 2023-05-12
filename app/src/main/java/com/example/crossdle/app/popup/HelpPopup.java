@@ -8,9 +8,7 @@ import android.widget.Button;
 
 import com.example.crossdle.R;
 
-/**
- * This class contains methods/variables that support the help/information popup.
- */
+
 public class HelpPopup extends Activity implements View.OnClickListener {
 
     @Override

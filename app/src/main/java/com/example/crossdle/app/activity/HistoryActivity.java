@@ -25,10 +25,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import java.util.ArrayList;
 
 
-/**
- * HistoryActivity is the activity where the players history is displayed.
- * It contains functions that manages HistoryItem objects.
- */
+
 public class HistoryActivity extends FragmentActivity {
 
     private final ArrayList<HistoryItem> items = new ArrayList<>();
@@ -50,7 +47,6 @@ public class HistoryActivity extends FragmentActivity {
 
     @Override
     protected void onStart() {
-        //Renews the history every time its visited.
         super.onStart();
         readStats();
         readHistory(() -> {
@@ -91,7 +87,6 @@ public class HistoryActivity extends FragmentActivity {
 
 
     public void readStats() {
-        //Reads players statistics from FireStore.
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         DocumentReference historyRef = db.collection("history").document(user.getUid());
@@ -113,7 +108,6 @@ public class HistoryActivity extends FragmentActivity {
     }
 
     private class HistoryPagerAdapter extends FragmentStateAdapter {
-        //A View Pager where History is displayed.
 
         public HistoryPagerAdapter(FragmentActivity activity) {
             super(activity);

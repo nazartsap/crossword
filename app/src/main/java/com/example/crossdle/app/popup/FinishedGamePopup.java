@@ -13,19 +13,14 @@ import com.example.crossdle.R;
 import com.example.crossdle.app.activity.GameActivity;
 import com.example.crossdle.app.activity.MainActivity;
 
-/**
- * This class contains methods/variables that support the game finished pop up when a user finishes
- * a game.
- */
+
 public class FinishedGamePopup extends AppCompatActivity {
 
-    // A TextView that will represents the time it took the user to finish the game.
     private TextView timeView;
 
-    // A TextView that will represents the number of attempts it took the user to finish.
     private TextView attemptsView;
 
-    // A TextView that will represents the title of the popup.
+
     private TextView titleView;
 
     @Override
@@ -63,20 +58,13 @@ public class FinishedGamePopup extends AppCompatActivity {
 
     }
 
-    /**
-     * This method will send the user to the GameActivity.
-     * @param view a View object.
-     */
+
     public void onClickGame(View view) {
         Intent intent = new Intent(this, GameActivity.class);
         intent.putExtra(GameActivity.ARG_TYPE, true);
         startActivity(intent);
     }
 
-    /**
-     * This method will send the user back to the main menu.
-     * @param view A View object.
-     */
     public void onClickMenu(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);

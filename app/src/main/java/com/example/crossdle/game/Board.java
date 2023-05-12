@@ -7,10 +7,7 @@ import java.util.List;
 import java.util.Queue;
 import java.util.function.Consumer;
 
-/***
- * Represents the model in the MVC architecture for a board. Holds the cells of data pertaining
- * to the game state. This is the main interface for interacting with most things game related.
- */
+
 public class Board implements Serializable
 {
     public static final int DEFAULT_SIZE = 6;
@@ -73,14 +70,10 @@ public class Board implements Serializable
         return attemptsRemaining;
     }
 
-    /**
-     * Gets the current selection.
-     */
+
     public Selection getSelection() { return selection; }
 
-    /**
-     * Sets a flag allowing or disallowing the change of the board.
-     */
+
     public void setActive(boolean active) {
         this.active = active;
     }
@@ -92,9 +85,7 @@ public class Board implements Serializable
         onLose = runnable;
     }
 
-    /**
-     * Checks if the board is fully complete and correct.
-     */
+
     private boolean isComplete() {
         for (int y = 0; y < data.length; y++) {
             for (int x = 0; x < data[y].length; x++) {
@@ -107,9 +98,7 @@ public class Board implements Serializable
         return true;
     }
 
-    /**
-     * Iterates through every cell on the board and applies a given action to it.
-     */
+
     public void forEach(Consumer<Cell> onNextCell) {
         for (int y = 0; y < data.length; y++) {
             for (int x = 0; x < data[y].length; x++) {
@@ -148,10 +137,6 @@ public class Board implements Serializable
         draw();
     }
 
-    /**
-     * Attempts to make a guess at the currently selected word. The word must be completely
-     * filled out, and it must be a valid word in the dictionary.
-     */
     public void guess() {
         Word word = selection.getWord();
 
@@ -178,10 +163,7 @@ public class Board implements Serializable
         }
     }
 
-    /**
-     * Selects the word for the cell at given coordinates or deselects if there is no set cell
-     * at coordinates.
-     */
+
     public void select(int x, int y) {
         if (!active) { return; }
 
@@ -211,9 +193,6 @@ public class Board implements Serializable
         onLose.run();
     }
 
-    /**
-     * Converts raw char data to cell data.
-     */
     private Cell[][] convertData(char[][] rawData) {
         Cell[][] data = new Cell[rawData.length][rawData.length];
 
@@ -228,9 +207,6 @@ public class Board implements Serializable
         return data;
     }
 
-    /**
-     * Wraps and converts raw char data to cell data.
-     */
     private Cell[][] wrapData(int size, char[] rawData) {
         Queue<Character> queue = new LinkedList();
 
@@ -252,9 +228,6 @@ public class Board implements Serializable
         return data;
     }
 
-    /**
-     * Links all cells with neighbouring cells using given cell data.
-     */
     private void linkCells(Cell[][] data) {
         for (int y = 0; y < size; y++) {
             for (int x = 0; x < size; x++) {

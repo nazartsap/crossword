@@ -22,10 +22,7 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * The sign in Activity
- * Connects to Firestore authentication.
- */
+
 public class SignInActivity extends AppCompatActivity {
 
     private static final String TAG = "EmailPassword";
@@ -39,44 +36,41 @@ public class SignInActivity extends AppCompatActivity {
         intent = new Intent(this, MainActivity.class);
         createSignInIntent();
     }
-    // [START auth_fui_create_launcher]
-    // See: https://developer.android.com/training/basics/intents/result
+
     private final ActivityResultLauncher<Intent> signInLauncher = registerForActivityResult(
             new FirebaseAuthUIActivityResultContract(),
             this::onSignInResult
     );
     public void createSignInIntent() {
-        // [START auth_fui_create_intent]
-        // Choose authentication providers
+
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build());
 
-        // Create and launch sign-in intent
         Intent signInIntent = AuthUI.getInstance()
                 .createSignInIntentBuilder()
                 .setIsSmartLockEnabled(false)
                 .setAvailableProviders(providers)
-                .setLogo(R.drawable.crossdle_logos)      // Set logo drawable
-                .setTheme(R.style.signup_theme)      // Set theme
+                .setLogo(R.drawable.crossdle_logos)
+                .setTheme(R.style.signup_theme)
                 .build();
         signInLauncher.launch(signInIntent);
-        // [END auth_fui_create_intent]
+
     }
-    // [START auth_fui_result]
+
     private void onSignInResult(FirebaseAuthUIAuthenticationResult result) {
         IdpResponse response = result.getIdpResponse();
         if (result.getResultCode() == RESULT_OK) {
             db = FirebaseFirestore.getInstance();
-            // Successfully signed in
+
             FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
             if (user != null) {
-            // Create a new user with a first and last name
+
             Map<String, Object> userData = new HashMap<>();
                 userData.put("Имя", user.getDisplayName());
                 userData.put("email", user.getEmail());
-            // Add a new document with a generated ID
+
             db.collection("users")
                     .add(userData)
                     .addOnSuccessListener(documentReference -> Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId()))
@@ -86,6 +80,4 @@ public class SignInActivity extends AppCompatActivity {
         }
 
     }
-    // [END auth_fui_result]
-    // [END auth_fui_create_launcher]
 }
